@@ -4,7 +4,7 @@
 
 > ⚠ **Important:** 
 >- You will require your own Google API keys!
->- Please carefully review the comments in the backend/servers.js and checher/src/app/home.page.jsx files.
+>- Please carefully review the comments in the backend/servers.js and checker/src/app/home.page.jsx files.
 
 
 ---
