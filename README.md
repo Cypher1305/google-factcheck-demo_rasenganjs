@@ -8,6 +8,8 @@
 
 ## 📋 Overview
 
+Demo here : https://google-factcheck-demo-rasenganjs.vercel.app/
+
 This project is a lightweight demo showing how to combine:
 - **Google Search API**
 - **Google Fact Check API**
@@ -17,7 +19,7 @@ You can use it to:
 
 - Query fact-checkable claims  
 - Display verification results in real time  
-- Experiment with integrating Google’s fact-checking tools into your own JS apps
+- Experiment with integrating Google’s search and fact-checking tools 
 
 ---
 
