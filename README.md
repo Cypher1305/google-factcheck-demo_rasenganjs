@@ -2,7 +2,7 @@
 
 🚀 **Demo app integrating Google Search and Google Fact Check API with RasenganJS frontend**
 
-> ⚠ **Important:** You will require your own Google API key!
+> ⚠ **Important:** You will require your own Google API keys!
 
 ---
 
@@ -38,7 +38,7 @@ npm install
 
 You will need:
 - A Google API key
-- AGoogle Custom Search Engine ID (CX)
+- A Google Custom Search Engine ID (CX)
 
 Create a **.env** file in the root folder and add:
 ```bash
