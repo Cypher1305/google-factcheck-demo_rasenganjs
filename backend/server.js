@@ -4,7 +4,9 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: 'https://google-factcheck-demo-rasenganjs.vercel.app' //Supprime cette ligne en local
+}));
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const GOOGLE_CX_ID = process.env.GOOGLE_CX_ID;
