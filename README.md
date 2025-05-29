@@ -1,4 +1,4 @@
-# Google-factcheck-demo_rasenganjs
+# Google-factcheck-demo with rasenganJS
 
 🚀 **Demo app integrating Google Search and Google Fact Check API with RasenganJS frontend**
 
@@ -53,7 +53,7 @@ npm run dev
 ```
 The app will be available at:
 ```bash
-[npm run dev](http://localhost:3000)
+http://localhost:3000
 ```
 ---
 
