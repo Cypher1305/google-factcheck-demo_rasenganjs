@@ -15,11 +15,14 @@ const Home = () => {
   const [factCheckResults, setFactCheckResults] = useState([]);
 
   const handleSearch = async () => {
+    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; //N'oublie pas de créer un fichier .env pour stocker l'url de ton backend dans la variable "REACT_APP_API_BASE_URL"
     const searchRes = await fetch(
-      `http://localhost:3001/api/search?query=${query}`
+      `${API_BASE_URL}/api/search?query=${query}` //--> (en prod)
+      //`http://localhost:3001/api/search?query=${query}`-->(en local)
     ).then((res) => res.json());
     const factCheckRes = await fetch(
-      `http://localhost:3001/api/factcheck?query=${query}`
+      `${API_BASE_URL}/api/factcheck?query=${query}`//--> (en prod)
+      //`http://localhost:3001/api/factcheck?query=${query}`-->(en local)
     ).then((res) => res.json());
     setSearchResults(searchRes.items || []);
     setFactCheckResults(factCheckRes.claims || []);
