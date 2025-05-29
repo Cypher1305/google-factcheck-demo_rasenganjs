@@ -18,8 +18,9 @@ const Home = () => {
   const handleSearch = async () => {
     setLoading(true);
     try {
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; //N'oublie pas de créer un fichier .env pour stocker l'url de ton backend dans la variable "REACT_APP_API_BASE_URL"
+    const API_BASE_URL = "https://google-factcheck-demo-rasenganjs.onrender.com"; //N'oublie pas de créer un fichier .env pour stocker l'url de ton backend dans la variable "REACT_APP_API_BASE_URL"
     console.log("API_BASE_URL:", API_BASE_URL);
+    
     const searchRes = await fetch(
       `${API_BASE_URL}/api/search?query=${query}`).then((res) => res.json()); //`http://localhost:3001/api/search?query=${query}`//-->(en local)
     const factCheckRes = await fetch(
