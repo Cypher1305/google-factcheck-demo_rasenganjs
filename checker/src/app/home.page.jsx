@@ -1,4 +1,6 @@
 import { Link } from "rasengan";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faPalette } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import logo from "@/assets/logo.svg";
 import Image from "@rasenganjs/image";
@@ -50,7 +52,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="mt-8 flex flex-wrap justify-center gap-4">
+      <div className="mt-9 mb-0 flex flex-wrap justify-center gap-4">
         <div className="flex flex-col p-4 rounded-md border-[1px] border-[#EFEFEF] max-w-[500px] md:w-[300px] lg:w-[400px]">
           <h2 className="text-xl font-urbanist">Learn</h2>
           <p className="mt-2">
@@ -79,6 +81,12 @@ const Home = () => {
           </a>
         </div>
       </div>
+      <footer>
+      <p class="mt-8 mx-auto mb-0 text-justify text-xs text-gray">
+         <FontAwesomeIcon icon={faCode} /> and <FontAwesomeIcon icon={faPalette} /> with ❤️
+        by <a href="https://benedicteyao.me" target="_blank" rel="noopener noreferrer"><strong>Cypher1305</strong></a>
+      </p>
+      </footer>
     </section>
   );
 };

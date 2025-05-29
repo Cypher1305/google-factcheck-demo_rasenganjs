@@ -58,9 +58,9 @@ The app will be available at:
 
 ## 📚 References
 
-- [Google Fact Check Tools API]()
-- [Google Custom Search API]()
-- [RasenganJS Documentation]()
+- [Google Fact Check Tools API](https://developers.google.com/fact-check/tools/api)
+- [Google Custom Search API](https://developers.google.com/custom-search/v1/overview)
+- [RasenganJS Documentation](https://www.rasengan.dev/docs/getting-started/installation)
 
 ---
 
@@ -77,7 +77,8 @@ whether it’s a bug fix, feature idea, or improving documentation.
 
 ---
 
-**If you find this project useful, give it a star**!⭐
+**If you find this project useful, give it a star**⭐:)
+_Happy Codding_!
 
 <p align="center">
   <em>“Think it.❤️ Code it.❤️ Share it.❤️ Repeat.”</em>
