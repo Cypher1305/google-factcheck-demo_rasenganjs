@@ -16,7 +16,6 @@
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@rasenganjs/image": "^1.0.0",
     "@rasenganjs/serve": "^1.0.0",
-    "@rasenganjs/vercel": "^1.0.0",
     "@tailwindcss/vite": "^4.*",
     "rasengan": "^1.0.0",
     "react": "^19.0.0",
