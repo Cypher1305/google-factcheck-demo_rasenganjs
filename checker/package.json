@@ -15,7 +15,12 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.*",
-    "@tailwindcss/vite": "^4.*"
+    "@tailwindcss/vite": "^4.*",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/free-regular-svg-icons": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@rasenganjs/vercel": "^1.0.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
