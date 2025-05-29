@@ -2,7 +2,10 @@
 
 🚀 **Demo app integrating Google Search and Google Fact Check API with RasenganJS frontend**
 
-> ⚠ **Important:** You will require your own Google API keys!
+> ⚠ **Important:** 
+- You will require your own Google API keys!
+- Please carefully review the comments in the backend/servers.js and checher/src/app/home.page.jsx files.
+
 
 ---
 
