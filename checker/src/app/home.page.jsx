@@ -11,22 +11,32 @@ import FactCheckResults from "./components/FactCheckResults";
 
 const Home = () => {
   const [query, setQuery] = useState("");
+  const [loading, setLoading] = useState(false);
   const [searchResults, setSearchResults] = useState([]);
   const [factCheckResults, setFactCheckResults] = useState([]);
 
   const handleSearch = async () => {
+    setLoading(true);
+    try {
     const API_BASE_URL = process.env.REACT_APP_API_BASE_URL; //N'oublie pas de créer un fichier .env pour stocker l'url de ton backend dans la variable "REACT_APP_API_BASE_URL"
     const searchRes = await fetch(
       `${API_BASE_URL}/api/search?query=${query}` //--> (en prod)
-      //`http://localhost:3001/api/search?query=${query}`-->(en local)
+      //`http://localhost:3001/api/search?query=${query}`//-->(en local)
     ).then((res) => res.json());
     const factCheckRes = await fetch(
       `${API_BASE_URL}/api/factcheck?query=${query}`//--> (en prod)
-      //`http://localhost:3001/api/factcheck?query=${query}`-->(en local)
+      //`http://localhost:3001/api/factcheck?query=${query}`//-->(en local)
     ).then((res) => res.json());
     setSearchResults(searchRes.items || []);
     setFactCheckResults(factCheckRes.claims || []);
+
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   };
+
   return (
     <section className="w-full h-full bg-white flex flex-col items-center py-8 px-[20px] md:px-[50px] xl:px-[200px] font-comfortaa">
       <header className="flex justify-end items-center w-full">
@@ -42,7 +52,7 @@ const Home = () => {
         <h1 className="text-2xl font-bold mb-4">
           Google Search + Fact Check Demo
         </h1>
-        <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} />
+        <SearchBar query={query} setQuery={setQuery} onSearch={handleSearch} loading={loading} />
         <div className="flex flex-wrap gap-4 mt-4 rounded-md border border-[#EFEFEF] p-4">
           <div className="flex-1 min-w-[300px] rounded-lg border border-gray-200 p-4 shadow-sm bg-white">
             <h2 className="text-lg font-semibold mb-2">Fact Check Results</h2>
@@ -85,7 +95,7 @@ const Home = () => {
         </div>
       </div>
       <footer>
-      <p class="mt-8 mx-auto mb-0 text-justify text-xs text-gray">
+      <p className="mt-8 mx-auto mb-0 text-justify text-xs text-gray">
          <FontAwesomeIcon icon={faCode} /> and <FontAwesomeIcon icon={faPalette} /> with ❤️
         by <a href="https://benedicteyao.me" target="_blank" rel="noopener noreferrer"><strong>Cypher1305</strong></a>
       </p>
