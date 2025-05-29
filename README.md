@@ -14,9 +14,10 @@ This project is a lightweight demo showing how to combine:
 - A fast, modern frontend built with **RasenganJS**
 
 You can use it to:
-✅ Query fact-checkable claims  
-✅ Display verification results in real time  
-✅ Experiment with integrating Google’s fact-checking tools into your own JS apps
+
+- Query fact-checkable claims  
+- Display verification results in real time  
+- Experiment with integrating Google’s fact-checking tools into your own JS apps
 
 ---
 
@@ -78,6 +79,7 @@ whether it’s a bug fix, feature idea, or improving documentation.
 ---
 
 **If you find this project useful, give it a star**⭐:)
+
 _Happy Codding_!
 
 <p align="center">
