@@ -13,6 +13,8 @@
 
 Demo here : https://google-factcheck-demo-rasenganjs.vercel.app/
 
+![Screenshot](images/screen.PNG)
+
 This project is a lightweight demo showing how to combine:
 - **Google Search API**
 - **Google Fact Check API**
